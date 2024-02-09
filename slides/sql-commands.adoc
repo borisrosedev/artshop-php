@@ -1,0 +1,176 @@
+= Les 20 commandes les plus importantes,
+:customcss: style.css
+
+
+[.blue.background]
+== Introduction
+
+Elles sont utilisées pour interagir avec une base de données MySQL
+
+[.blue.background]
+=== CREATE DATABASE 
+
+CREATE DATABASE : Crée une nouvelle base de données.
+
+[source, sql]
+----
+CREATE DATABASE my_database;
+----
+
+[.blue.background]
+=== DROP DATABASE 
+
+DROP DATABASE : Supprime une base de données existante.
+
+[source, sql]
+----
+DROP DATABASE my_database;
+----
+
+[.blue.background]
+=== USE
+USE : Sélectionne la base de données à utiliser.
+
+[source, sql]
+----
+USE my_database;
+----
+
+[.blue.background]
+=== CREATE TABLE
+CREATE TABLE : Crée une nouvelle table dans la base de données.
+
+[source, sql]
+----
+CREATE TABLE my_table (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT
+);
+----
+
+
+=== ALTER TABLE
+
+ALTER TABLE : Modifie la structure d'une table existante.
+
+[source, sql]
+----
+ALTER TABLE my_table ADD COLUMN email VARCHAR(100);
+----
+
+=== DROP TABLE
+
+DROP TABLE : Supprime une table existante.
+
+[source, sql]
+----
+DROP TABLE my_table;
+----
+
+=== SELECT 
+SELECT : Récupère des données à partir d'une ou plusieurs tables.
+
+[source, sql]
+----
+SELECT * FROM my_table;
+----
+
+=== INSERT INTO
+INSERT INTO : Insère de nouvelles lignes dans une table.
+
+
+[source, sql]
+----
+INSERT INTO my_table (name, age) VALUES ('John', 30);
+----
+
+=== UPDATE
+UPDATE : Met à jour les données existantes dans une table.
+[source, sql]
+----
+UPDATE my_table SET age = 31 WHERE name = 'John';
+----
+
+=== DELETE
+DELETE FROM : Supprime des lignes d'une table.
+[source, sql]
+----
+DELETE FROM my_table WHERE name = 'John';
+----
+
+=== TRUNCATE TABLE
+TRUNCATE TABLE : Supprime toutes les données d'une table sans supprimer la structure de la table.
+[source, sql]
+----
+TRUNCATE TABLE my_table;
+----
+
+
+=== SHOW DATABASES
+SHOW DATABASES : Affiche la liste des bases de données disponibles.
+[source, sql]
+----
+SHOW DATABASES;
+----
+
+=== SHOW TABLES
+SHOW TABLES : Affiche la liste des tables dans la base de données sélectionnée.
+[source, sql]
+----
+SHOW TABLES;
+----
+
+=== DESCRIBE OU DESC
+DESCRIBE ou DESC : Affiche la structure d'une table.
+[source, sql]
+----
+DESCRIBE my_table;
+----
+
+=== CREATE INDEX
+CREATE INDEX : Crée un index sur une table.
+[source, sql]
+----
+CREATE INDEX idx_name ON my_table (name);
+----
+
+=== DROP INDEX
+DROP INDEX : Supprime un index existant sur une table.
+[source, sql]
+----
+DROP INDEX idx_name ON my_table;
+----
+
+=== GRANT 
+GRANT : Accorde des privilèges d'accès aux utilisateurs.
+[source, sql]
+----
+GRANT SELECT, INSERT ON my_table TO 'user'@'localhost' IDENTIFIED BY 'password';
+----
+
+=== REVOKE
+REVOKE : Révoque les privilèges d'accès accordés précédemment aux utilisateurs.
+[source, sql]
+----
+REVOKE SELECT, INSERT ON my_table FROM 'user'@'localhost';
+----
+
+=== SHOW GRANTS
+SHOW GRANTS : Affiche les privilèges accordés aux utilisateurs.
+[source, sql]
+----
+SHOW GRANTS FOR 'user'@'localhost';
+----
+
+=== FLUSH PRIVILEGES
+FLUSH PRIVILEGES : Recharge les privilèges d'accès après avoir modifié les autorisations d'utilisateur.
+[source, sql]
+----
+FLUSH PRIVILEGES;
+----
+
+
+
+
+

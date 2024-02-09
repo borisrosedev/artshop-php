@@ -1,0 +1,67 @@
+= Les jointures
+:customcss: style.css
+
+
+[.blue.background]
+== INNER JOIN 
+
+Cette commande permet de sélectionner des enregistrements qui ont des valeurs correspondantes dans les deux tables.
+
+[source, sql]
+----
+SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id;
+----
+
+[.blue.background]
+== LEFT JOIN
+LEFT JOIN : Cette commande retourne tous les enregistrements de la première table et les enregistrements correspondants de la deuxième table.
+
+[source, sql]
+----
+SELECT * FROM table1 LEFT JOIN table2 ON table1.id = table2.id;
+----
+
+[.blue.background]
+== RIGHT JOIN
+RIGHT JOIN : Cette commande retourne tous les enregistrements de la deuxième table et les enregistrements correspondants de la première table.
+
+[source, sql]
+----
+SELECT * FROM table1 RIGHT JOIN table2 ON table1.id = table2.id;
+----
+
+[.blue.background]
+== FULL JOIN
+FULL JOIN : Cette commande retourne tous les enregistrements lorsqu'il y a une correspondance dans l'une des tables.
+
+[source, sql]
+----
+SELECT * FROM table1 FULL JOIN table2 ON table1.id = table2.id;
+----
+
+[.blue.background]
+== UNION 
+UNION : Cette commande permet de combiner les résultats de deux ou plusieurs requêtes SELECT.
+
+[source, sql]
+----
+SELECT column1 FROM table1 UNION SELECT column1 FROM table2;
+----
+
+[.blue.background]
+== INTERSECT
+INTERSECT : Cette commande permet de retourner les lignes qui se trouvent dans les deux résultats de requête.
+
+[source, sql]
+----
+SELECT column1 FROM table1 INTERSECT SELECT column1 FROM table2;
+----
+
+[.blue.background]
+== EXCEPT
+EXCEPT : Cette commande permet de retourner les lignes qui se trouvent dans le premier résultat de requête mais pas dans le deuxième.
+
+[source, sql]
+----
+SELECT column1 FROM table1 EXCEPT SELECT column1 FROM table2;
+----

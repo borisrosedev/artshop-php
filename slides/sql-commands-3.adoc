@@ -1,0 +1,37 @@
+= GROUP BY, HAVING et ORDER BY
+:customcss: style.css
+
+[.blue.background]
+== GROUP BY
+GROUP BY : Cette commande permet de regrouper les lignes qui ont la même valeur dans une ou plusieurs colonnes.
+
+[source, sql]
+----
+SELECT column1, COUNT(*) FROM table1 GROUP BY column1;
+----
+
+[.blue.background]
+== HAVING
+HAVING : Cette commande permet d'appliquer une condition à un groupe de lignes résultant d'une clause GROUP BY.
+
+[source, sql]
+----
+SELECT column1, COUNT(*) FROM table1 GROUP BY column1 HAVING COUNT(*) > 1;
+----
+
+[.blue.background]
+== ORDER BY
+
+ORDER BY : Cette commande permet de trier les résultats d'une requête par ordre croissant ou décroissant.
+
+[source, sql]
+----
+SELECT * FROM table1 ORDER BY column1 ASC;
+----
+
+
+
+
+
+
+

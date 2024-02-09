@@ -1,0 +1,47 @@
+= Attaque de collision
+:customcss: style.css
+
+[.blue.background]
+== Définition
+
+Une attaque de collision est une situation où deux entrées différentes produisent la même sortie lorsqu'elles sont traitées par une fonction de hachage. 
+
+[.blue.background]
+== Sécurité informatique
+
+Dans le contexte de la sécurité informatique, les attaques de collision peuvent être utilisées pour compromettre l'intégrité des données ou pour violer des protocoles de sécurité.
+
+[.blue.background]
+=== Fonctions de hachage
+
+Dans le cas des fonctions de hachage utilisées pour stocker des mots de passe, une attaque de collision signifierait que deux mots de passe différents pourraient produire le même hachage. 
+
+[.blue.background]
+=== ...
+
+Cela pourrait permettre à un attaquant de se connecter à un système avec un mot de passe différent de celui d'un utilisateur légitime, mais produisant le même hachage.
+
+[.blue.background]
+=== MD5 
+
+MD5, une fonction de hachage largement utilisée par le passé, est aujourd'hui considérée comme vulnérable aux attaques de collision. 
+
+[.blue.background]
+=== ...
+
+Cela signifie que des techniques ont été développées pour générer deux entrées différentes produisant le même hachage MD5. 
+
+[.blue.background]
+=== ...
+
+En conséquence, MD5 n'est plus considéré comme sécurisé pour le stockage de mots de passe ou pour d'autres applications où l'intégrité des données est cruciale.
+
+[.blue.background]
+=== SHA-256
+
+Les fonctions de hachage plus sécurisées comme SHA-256 sont moins susceptibles de rencontrer des collisions, mais elles ne sont pas non plus totalement invulnérables aux attaques de collision. 
+
+[.blue.background]
+=== ...
+
+Cependant, elles sont généralement considérées comme beaucoup plus résistantes que MD5 et sont actuellement recommandées pour le stockage sécurisé des mots de passe et d'autres applications de sécurité.

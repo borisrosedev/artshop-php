@@ -1,0 +1,283 @@
+= Git
+:customcss: style.css
+
+
+== Configuration et initialisation
+
+=== git init 
+
+Initialise un nouveau dépôt Git dans le répertoire actuel.
+
+[source, bash]
+----
+git init
+----
+
+=== git config 
+
+Configure les paramètres de Git.
+
+[source, bash]
+----
+git config --global user.name "Votre Nom"
+git config --global user.email "votre@email.com"
+----
+
+=== git clone 
+
+Clone un dépôt existant dans un nouveau répertoire.
+
+[source, bash]
+----
+git clone https://exemple.com/mon-projet
+----
+
+
+== Suivi des fichiers :
+
+=== git add 
+
+Ajoute des fichiers à l'index (staging area).
+
+[source, bash]
+----
+git add fichier.txt
+----
+
+=== git rm 
+Supprime des fichiers de l'index et du répertoire de travail.
+
+[source, bash]
+----
+git rm fichier.txt
+----
+
+
+git mv : Déplace ou renomme des fichiers.
+
+[source, bash]
+----
+git mv ancien_fichier.txt nouveau_fichier.txt
+----
+
+
+== Gestion des commits :
+
+=== git commit 
+Enregistre les modifications dans l'historique avec un message descriptif.
+
+[source, bash]
+----
+git commit -m "Ajout d'un nouveau fichier"
+----
+
+
+=== git reset
+Annule des modifications en les retirant de l'index ou en modifiant l'histoire.
+
+[source, bash]
+----
+git reset HEAD fichier.txt
+----
+
+
+=== git revert
+Annule un commit en créant un nouveau commit.
+
+[source, bash]
+----
+git revert 1234567
+----
+
+
+== Branches et fusion
+=== git branch
+Gère les branches du dépôt.
+
+[source, bash]
+----
+git branch ma-nouvelle-branche
+----
+
+=== git checkout
+Change de branche ou restaure les fichiers.
+
+[source, bash]
+----
+git checkout ma-nouvelle-branche
+----
+
+=== git merge 
+Fusionne une branche dans la branche actuelle.
+
+[source, bash]
+----
+git merge ma-nouvelle-branche
+----
+
+
+== Gestion des remotes :
+
+=== git remote 
+Gère les dépôts distants.
+
+[source, bash]
+----
+git remote add origin https://exemple.com/mon-projet.git
+----
+
+
+=== git fetch
+Récupère les modifications à partir d'un dépôt distant.
+
+[source, bash]
+----
+git fetch origin
+----
+
+=== git pull 
+Récupère les modifications à partir d'un dépôt distant et les fusionne dans la branche locale.
+
+[source, bash]
+----
+git pull origin master
+----
+
+
+== Collaboration :
+
+git push : Envoie les modifications locales vers un dépôt distant.
+
+[source, bash]
+----
+git push origin master
+----
+
+
+=== git branch -d 
+Supprime une branche locale.
+
+[source, bash]
+----
+git branch -d ma-branche-a-supprimer
+----
+
+=== git tag 
+Marque des points spécifiques dans l'historique des commits comme versions.
+
+[source, bash]
+----
+git tag v1.0.0
+----
+
+
+== Gestion des conflits
+
+=== git diff 
+Affiche les différences entre les fichiers et les commits.
+
+[source, bash]
+----
+git diff HEAD fichier.txt
+----
+
+
+=== git merge --abort 
+Annule une fusion en cours.
+
+[source, bash]
+----
+git merge --abort
+----
+
+
+=== git mergetool
+Ouvre un outil de fusion pour résoudre les conflits.
+
+[source, bash]
+----
+git mergetool
+----
+
+== Recherche et historique
+
+=== git log 
+Affiche l'historique des commits.
+
+[source, bash]
+----
+git log
+----
+
+=== git grep 
+Recherche dans les fichiers l'occurrence d'un motif.
+
+[source, bash]
+----
+git grep "motif" fichier.txt
+----
+
+== Maintenance et nettoyage :
+
+=== git clean 
+Supprime les fichiers non suivis dans le répertoire de travail.
+
+[source, bash]
+----
+git clean -f
+----
+
+=== git reflog 
+Affiche l'historique des références Git.
+
+[source, bash]
+----
+git reflog
+----
+
+== Autres commandes utiles
+
+=== git stash 
+Met de côté des modifications temporaires.
+
+[source, bash]
+----
+git stash
+----
+
+
+=== git bisect
+Aide à trouver le commit responsable d'un bogue en utilisant la recherche binaire.
+
+[source, bash]
+----
+git bisect start
+----
+
+=== git cherry-pick 
+Applique un commit spécifique à une branche.
+
+[source, bash]
+----
+git cherry-pick 1234567
+----
+
+== Analyse et visualisation 
+
+=== git log --graph 
+Affiche l'historique des commits sous forme graphique.
+
+[source, bash]
+----
+git log --graph --oneline --decorate --all
+----
+
+
+=== git blame 
+Affiche qui a modifié chaque ligne d'un fichier et quand.
+
+[source, bash]
+----
+git blame fichier.txt
+----
+

@@ -1,0 +1,79 @@
+= Créer une clé étrangère
+:customcss: style.css
+
+[.blue.background]
+== Comment faire
+
+Pour créer une clé étrangère (foreign key) dans une table MySQL, vous devez suivre les étapes suivantes :
+
+[.blue.background]
+=== EXISTS ?
+Assurez-vous que la colonne faisant référence à la clé primaire de la table parente existe déjà dans la table enfant. 
+
+Si cette colonne n'existe pas encore, vous devez d'abord la créer.
+
+[.blue.background]
+=== ALTER TABLE
+
+Utilisez la commande ALTER TABLE pour ajouter une contrainte de clé étrangère à votre table.
+
+[.blue.background]
+=== EXEMPLE
+Voici un exemple de la syntaxe pour ajouter une clé étrangère :
+
+[source, sql]
+----
+ALTER TABLE table_enfant
+ADD CONSTRAINT nom_contrainte
+FOREIGN KEY (colonne_enfant)
+REFERENCES table_parente (colonne_parente);
+----
+
+[.blue.background]
+=== table_enfant
+
+Le nom de la table enfant dans laquelle vous souhaitez créer la clé étrangère.
+
+[.blue.background]
+=== nom_contrainte 
+
+Un nom que vous attribuez à la contrainte de clé étrangère (optionnel).
+
+[.blue.background]
+=== colonne_enfant 
+
+Le nom de la colonne dans la table enfant faisant référence à la clé primaire de la table parente.
+
+
+[.blue.background]
+=== table_parente 
+
+Le nom de la table parente contenant la clé primaire à laquelle la clé étrangère fait référence.
+
+[.blue.background]
+=== colonne_parente 
+
+Le nom de la colonne dans la table parente qui est la clé primaire.
+
+[.blue.background]
+== Exemple concret
+
+Supposons que nous ayons deux tables : employes et departements. 
+
+[.blue.background]
+=== ...
+Nous voulons ajouter une clé étrangère departement_id dans la table employes faisant référence à la clé primaire id dans la table departements.
+
+[source, sql]
+----
+ALTER TABLE employes
+ADD CONSTRAINT fk_departement_id
+FOREIGN KEY (departement_id)
+REFERENCES departements (id);
+----
+
+[.blue.background]
+=== ...
+
+Cette commande crée une contrainte de clé étrangère nommée fk_departement_id dans la table employes, où la colonne departement_id fait référence à la clé primaire id dans la table departements.
+
