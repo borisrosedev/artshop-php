@@ -1,0 +1,112 @@
+= MySQL
+:customcss: style.css
+
+[.blue.background]
+== Définition
+
+MySQL est l'un des systèmes de gestion de base de données relationnelles les plus populaires et largement utilisés dans le monde. 
+
+[.blue.background]
+== Points clés relatifs à MySQL
+
+[.blue.background]
+=== Développement et propriétaire 
+
+MySQL a été initialement développé par une société suédoise appelée MySQL AB, fondée par Michael "Monty" Widenius, David Axmark, et Allan Larsson. 
+
+[.blue.background]
+=== ...
+
+Il est maintenant détenu et maintenu par Oracle Corporation après son acquisition de Sun Microsystems, qui avait précédemment acquis MySQL AB.
+
+[.blue.background]
+=== Open Source 
+
+MySQL est un logiciel open source, ce qui signifie que son code source est disponible gratuitement et peut être modifié et distribué sous certaines conditions définies par la licence GPL (GNU General Public License). 
+
+[.blue.background]
+=== ...
+
+Il existe également une version commerciale de MySQL proposée par Oracle Corporation, qui comprend des fonctionnalités et un support supplémentaires.
+
+[.blue.background]
+=== Langage de requête 
+
+MySQL utilise le langage SQL (Structured Query Language) pour interagir avec les bases de données. 
+
+[.blue.background]
+=== ...
+
+Il prend en charge la plupart des fonctionnalités standard de SQL, ainsi que des extensions spécifiques à MySQL.
+
+[.blue.background]
+=== Fonctionnalités 
+
+MySQL offre un large éventail de fonctionnalités, y compris:
+[%step]
+* la gestion des transactions ACID (Atomicité, Cohérence, Isolation, Durabilité)
+* la réplication pour la haute disponibilité
+* le partitionnement pour la mise à l'échelle
+* les index pour les performances de requête
+* les vues pour la virtualisation de données
+* etc.
+
+[.blue.background]
+=== Compatibilité 
+
+MySQL est compatible avec de nombreux systèmes d'exploitation, y compris:
+[%step]
+* Linux
+* Windows
+* macOS
+* FreeBSD
+* etc. 
+
+[.blue.background]
+=== ...
+
+Il est également pris en charge par de nombreux langages de programmation, notamment :
+[%step]
+* PHP
+* Python
+* Java
+* Ruby, 
+* etc.
+
+[.blue.background]
+=== Communauté active 
+
+MySQL bénéficie d'une communauté d'utilisateurs et de développeurs très active qui contribuent: 
+[%step]
+* au développement
+* à la documentation
+* au support de la plateforme. 
+
+[.blue.background]
+=== ...
+
+Il existe de nombreuses ressources en ligne, y compris:
+[%step]
+* des forums
+* des listes de diffusion
+* des blogs
+* des tutoriels pour aider les utilisateurs à tirer le meilleur parti de MySQL.
+
+[.blue.background]
+=== Évolution et versions 
+
+MySQL a connu plusieurs versions majeures au fil des ans, avec des améliorations continues en termes de:
+[%step]
+* performances
+* de sécurité
+* de fonctionnalités
+* de compatibilité. 
+
+[.blue.background]
+=== ...
+Les versions les plus récentes incluent MySQL 8.0 et MySQL 5.7, avec des mises à jour régulières publiées par Oracle.
+
+[.blue.background]
+== En résumé, 
+
+MySQL est une base de données relationnelle populaire, open source, offrant une large gamme de fonctionnalités, une grande compatibilité, et bénéficiant d'une communauté active de développeurs et d'utilisateurs.
