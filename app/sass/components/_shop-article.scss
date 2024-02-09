@@ -1,0 +1,17 @@
+.shop__article {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px gray;
+    margin: 20px;
+
+    figure {
+        height: 100%;
+    }
+    @media (0 <= width <= 715px){
+        margin: 20px 10px;
+        width: 80%;
+        
+    }
+}

@@ -1,0 +1,23 @@
+.shop__main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.shop__main .shop-main__articles {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: inherit;
+}
+@media (0 <= width <= 715px) {
+  .shop__main .shop-main__articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+}
+
+/*# sourceMappingURL=shop.css.map */

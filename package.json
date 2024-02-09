@@ -1,0 +1,21 @@
+{
+  "name": "artshop-php",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier . --write",
+    "sass": "sass --watch ./app/sass:./app/css",
+    "start": "npm run sass"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.70.0"
+  }
+}
